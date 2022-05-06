@@ -36,4 +36,18 @@ java Billing "/Users/ashayalla/Desktop/individual-project-AshaYalla/resources/In
 
 ## Class Diagram
 
-![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/src/202individual.drawio.png)
+![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/202individual.jpeg)
+
+Output for the given input
+
+![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/output%20for%20the%20input%20provided.png)
+
+Output of correct order
+
+![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/correct%20order.png)
+
+Output of Error Order
+
+![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/error%20order.png)
+
+

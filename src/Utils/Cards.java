@@ -5,6 +5,8 @@ import Utils.IContainer;
 import Utils.Iterator;
 
 import java.util.ArrayList;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Cards implements IContainer {
     ArrayList<String> creditcardsData = new ArrayList<String>();
@@ -12,7 +14,10 @@ public class Cards implements IContainer {
 
     private Cards() {
         try {
-            BufferedReader bufferreader1 = new BufferedReader(new FileReader("/Users/ashayalla/Downloads/individual-project-asha/resources/CreditCards.csv"));
+            Path currentRelativePath = Paths.get("");
+            String s = currentRelativePath.toAbsolutePath().toString();
+            String strNew = s.substring(0, s.length()-4);
+            BufferedReader bufferreader1 = new BufferedReader(new FileReader(strNew+ "/resources/CreditCards.csv"));
                 String line1="";
                 while(true){
                     line1=bufferreader1.readLine();

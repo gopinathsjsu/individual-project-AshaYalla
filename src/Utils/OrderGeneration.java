@@ -16,7 +16,9 @@ public class OrderGeneration {
         IContainer iCards = Cards.getInstance();
         Iterator iterator = iCards.createIterator();
         try{
+            //System.out.println("bleh1"+strNew+"/resources/CreditCards.csv");
             FileWriter cwriter = new FileWriter(strNew+"/resources/CreditCards.csv" ,true);
+            //System.out.println("bleh"+strNew+"/resources/CreditCards.csv");
             BufferedWriter out=new BufferedWriter(cwriter);
             
 
@@ -53,9 +55,9 @@ public class OrderGeneration {
             Double totalamount=0.0;
             HashMap<String,String> limitqty =new HashMap<String,String>();
             try{
-                limitqty.put("Essentials","10");
-                limitqty.put("Luxury","10");
-                limitqty.put("Misc","10");
+                limitqty.put("Essentials","2");
+                limitqty.put("Luxury","2");
+                limitqty.put("Misc","2");
                 int error=0;
                 String cardNumber = null;
                
@@ -121,7 +123,7 @@ public class OrderGeneration {
                                 shopStock.qtyStore().put(item,Double.toString(updatedstoreQty));
                                 Double updatedlimitQty=Double.valueOf(limitqty.get(shopStock.categoryStore().get(item)))-quanty;
                                 limitqty.put(shopStock.categoryStore().get(item),Double.toString(updatedlimitQty));
-                                System.out.println(item+" " +quanty+ " "+ currentprice  );
+                                //System.out.println(item+" " +quanty+ " "+ currentprice  );
                                 correctitems = correctitems +item+"," +quanty+ ","+ currentprice + "\n" + "                                                      " + "\n";    
                             }
                             else{

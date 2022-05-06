@@ -38,6 +38,8 @@ java Billing "/Users/ashayalla/Desktop/individual-project-AshaYalla/resources/In
 
 ![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/202individual.jpeg)
 
+Cap for categories Essentials, Luxury, Misc is 10 respectively.
+
 Output for the given input
 
 ![project image](https://github.com/gopinathsjsu/individual-project-AshaYalla/blob/main/output%20for%20the%20input%20provided.png)

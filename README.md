@@ -11,9 +11,10 @@ Created a java application to stimulate user purchase scenario the application h
 
 ## Steps to run the applicaton
 
-Run the following commands in src folder of the application
+git clone this repo and Run the following commands in src folder of the application and then enter the below commands. 
 javac Billing.java 
 java Billing "/Users/ashayalla/Desktop/individual-project-AshaYalla/resources/Input.csv"
+Billing class has to be provided the url of the input file. 
 
 
 ## Design Pattern
